@@ -31,4 +31,14 @@ router.get('/:hashedUrl', async (req, res) => {
   }
 });
 
+// get all url
+router.get("/", async (req, res) => {
+  try {
+    const url = await Url.find({});
+    res.json(url);
+  } catch (error) {
+    res.status(400).json({ message: `Get Error ${error}` });
+  }
+})
+
 module.exports = router;
