@@ -9,7 +9,7 @@ const app=express()
 const PORT = process.env.PORT || 8000;
 app.use(bodyParser.json());
 app.use(cors({
-    origin: ["https://dummy-vercel-frontend.vercel.app/","http://localhost:3000"],
+    origin: ["https://hash-url.vercel.app","http://localhost:3000"],
     credentials: true
 }));
 
