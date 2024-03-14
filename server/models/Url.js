@@ -17,7 +17,7 @@ const urlSchema = new mongoose.Schema({
   expireAt: {
     type: Date,
     default: Date.now,
-    index: { expires: '60s' } // Expires after 60 seconds (1 minute)
+    index: { expires: '10m' } // Expires after 60 seconds (1 minute)
   }
 });
 
